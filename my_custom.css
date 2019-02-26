@@ -1,0 +1,42 @@
+body{
+    margin: auto;
+    font-family: Helvetica, Arial, sans-serif; /* Georgia, Palatino, serif; */
+    max-width: 1080px;
+}
+h1 {
+  font-size: 400%;
+}
+h2 {
+  font-size: 300%;
+}
+h3 {
+  font-size: 200%;
+}
+h4 {
+  font-size: 175%;
+}
+h5 {
+  font-size: 150%;
+}
+h6 {
+  font-size: 125%;
+}
+
+ul, ol {
+    line-height: 1.5;
+}
+
+code {
+    font-family: Consolas, Monaco, monospace;
+    line-height: 1.5;
+    font-size: 125%;
+}
+
+.MathJax_Display, .MathJax {
+  font-family: "Latin Modern Math";
+  font-size: 125%;
+}
+
+img {
+  max-width: 1080px;
+}
