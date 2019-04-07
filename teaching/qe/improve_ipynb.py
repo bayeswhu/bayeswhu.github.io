@@ -13,6 +13,12 @@ for file in jnb:
     with open(file, "r", encoding='utf8') as f:
         data = json.load(f)
 
+    # 如果第一块是图片，则删除
+    for i in data['cells'][0]['source']:
+        if '<img ' in i:
+            data['cells'] = data['cells'][1:]
+            break
+
     # 删除空的块
     empty_index = [i for i, s in enumerate(data['cells']) if s['source'] == []]
     data['cells'] = [s for i, s in enumerate(
